@@ -23,28 +23,23 @@ public class Main {
             }
 
             System.out.print("Digite o primeiro número: ");
-            int num1 = scanner.nextInt();
+            double num1= scanner.nextDouble();
 
             System.out.print("Digite o segundo número: ");
-            int num2 = scanner.nextInt();
+            double num2 = scanner.nextDouble();
 
             try {
-                int resultadoInt = 0;
-                double resultadoDouble = 0;
+                double resultado = 0;
 
                 switch (opcao) {
-                    case 1 -> resultadoInt = calculadora.soma(num1, num2);
-                    case 2 -> resultadoInt = calculadora.subtracao(num1, num2);
-                    case 3 -> resultadoInt = calculadora.multiplicacao(num1, num2);
-                    case 4 -> resultadoDouble = calculadora.dividir(num1, num2);
+                    case 1 -> resultado = calculadora.soma(num1,num2);
+                    case 2 -> resultado = calculadora.subtracao(num1, num2);
+                    case 3 -> resultado = calculadora.multiplicacao(num1, num2);
+                    case 4 -> resultado  = calculadora.dividir(num1, num2);
                     default -> System.out.println("Opção inválida!");
                 }
 
-                if (opcao == 4) {
-                    System.out.println("Resultado: " + resultadoDouble);
-                } else {
-                    System.out.println("Resultado: " + resultadoInt);
-                }
+                System.out.println("Resultado: " + resultado);
 
             } catch (IllegalArgumentException e) {
                 System.out.println("Erro: " + e.getMessage());
