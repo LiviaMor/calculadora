@@ -1,5 +1,5 @@
 package scarlet;
-import scarlet.Calculadora;
+
 import java.util.Scanner;
 
 public class Main {

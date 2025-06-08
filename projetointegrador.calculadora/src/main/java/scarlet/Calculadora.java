@@ -2,7 +2,6 @@ package scarlet;
 
 public class Calculadora  {
     public double soma(double a, double b) {
-
         return a + b;
     }
     public double subtracao(double a, double b) {
@@ -12,10 +11,7 @@ public class Calculadora  {
         return a * b;
     }
     public double dividir(double a, double b) {
-        if (b == 0) {
-
-            throw new ArithmeticException("Não é possível dividir por zero!");
-        }
+        if (b == 0) throw new ArithmeticException("Não é possível dividir por zero!");
         return a / b;
     }
 }
