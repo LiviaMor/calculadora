@@ -27,8 +27,8 @@ calculadora/
 │   │   ├── Calculadora.java  # Implementação da calculadora
 │   │   ├── Main.java    # Enum com tipos de operações
 │   ├── test/java
-│   │   ├── CalculadoraTeste.java  # Testes unitários com JUnit5
-│   │   ├── CalculadoraTesteAvancado.java 
+│   │   ├── CalculadoraTest.java  # Testes unitários com JUnit5
+│   │   ├── CalculadoraAdvancedTest.java 
 │── pom.xml  # Dependências do projeto
 ```
 
