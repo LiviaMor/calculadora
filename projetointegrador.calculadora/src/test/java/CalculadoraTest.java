@@ -3,7 +3,7 @@ import org.junit.jupiter.api.*;
 import scarlet.Calculadora;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class CalculadoraTeste {
+public class CalculadoraTest {
     Calculadora calculadora = new Calculadora();
 
     @Test

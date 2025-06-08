@@ -5,7 +5,7 @@ import scarlet.Calculadora;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class CalculadoraTesteAvancado {
+public class CalculadoraAdvancedTest {
     private Calculadora calculadora;
 
     @BeforeEach
