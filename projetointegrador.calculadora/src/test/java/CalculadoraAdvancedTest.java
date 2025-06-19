@@ -53,13 +53,13 @@ public class CalculadoraAdvancedTest {
     @DisplayName("Teste de Multiplicação")
     @Order(4)
     public void multiplicacao() {
-        double a = 10;
-        double b = 20;
-        double expected = 200;
-        double result = calculadora.multiplicacao(10, 20);
-        System.out.println("Multiplicação " + a + " * " + b + " = " + result);
-        assertEquals(expected, result, "Erro: esperado " + expected + " mas obtido " + result);
+        double valor = 10;
+        valor = calculadora.multiplicacao(valor, 2);
+        assertEquals(20, valor, "Erro: esperado 20 mas obtido " + valor);
+        valor = calculadora.multiplicacao(valor,3 );
+        assertEquals(60, valor, "Erro: esperado 60 mas obtido " + valor);
     }
+
 
     @Test
     @DisplayName("Teste de Divisão")
