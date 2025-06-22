@@ -28,7 +28,7 @@ public class CalculadoraAdvancedTest {
     @ParameterizedTest
     @DisplayName("Teste Múltiplo de Soma")
     @Order(2)
-    @CsvSource({"40, 60, 110", "5, 2 , 7", "5, 1, 6"})
+    @CsvSource({"40, 60, 100", "5, 2 , 7", "5, 1, 6"})
     void testMultipleAdd(double a, double b, double expected) {
         double result = calculadora.soma(a, b);
         assertEquals(expected, result, "Erro: esperado " + expected + " mas obtido " + result);
